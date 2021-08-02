@@ -35,8 +35,13 @@ int main (){
         cleite = 2000 - mldeleite;
         cleite < 0 ? cleite = 0 : 0;
     }else{
-        (covos > 0) ? cleite = 0 : cleite = 500;
-
+        if ( covos > 0 ){
+            cleite = 0;
+        }else{
+            cleite = 500;
+        }
+        
+        
     }
     
     printf("%d laranjas\n", claranjas);
@@ -44,5 +49,9 @@ int main (){
     printf("%d ovos\n", covos);
     printf("%d mL de leite\n", cleite);
     }
+    
+
+        
+
 }
     
